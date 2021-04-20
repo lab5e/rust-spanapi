@@ -4,19 +4,19 @@ All URIs are relative to *https://api.lab5e.com/span*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**create_device**](DevicesApi.md#create_device) | **post** /collections/{collectionId}/devices | Create device
-[**delete_device**](DevicesApi.md#delete_device) | **delete** /collections/{collectionId}/devices/{deviceId} | Remove device
-[**list_device_data**](DevicesApi.md#list_device_data) | **get** /collections/{collectionId}/devices/{deviceId}/data | Get payloads
-[**list_devices**](DevicesApi.md#list_devices) | **get** /collections/{collectionId}/devices | List devices
-[**retrieve_device**](DevicesApi.md#retrieve_device) | **get** /collections/{collectionId}/devices/{deviceId} | Retrieve device
-[**send_message**](DevicesApi.md#send_message) | **post** /collections/{collectionId}/devices/{deviceId}/to | Send message
-[**update_device**](DevicesApi.md#update_device) | **patch** /collections/{existingCollectionId}/devices/{deviceId} | Update device
+[**span_create_device**](DevicesApi.md#span_create_device) | **post** /collections/{collectionId}/devices | Create device
+[**span_delete_device**](DevicesApi.md#span_delete_device) | **delete** /collections/{collectionId}/devices/{deviceId} | Remove device
+[**span_list_device_data**](DevicesApi.md#span_list_device_data) | **get** /collections/{collectionId}/devices/{deviceId}/data | Get payloads
+[**span_list_devices**](DevicesApi.md#span_list_devices) | **get** /collections/{collectionId}/devices | List devices
+[**span_retrieve_device**](DevicesApi.md#span_retrieve_device) | **get** /collections/{collectionId}/devices/{deviceId} | Retrieve device
+[**span_send_message**](DevicesApi.md#span_send_message) | **post** /collections/{collectionId}/devices/{deviceId}/to | Send message
+[**span_update_device**](DevicesApi.md#span_update_device) | **patch** /collections/{existingCollectionId}/devices/{deviceId} | Update device
 
 
 
-## create_device
+## span_create_device
 
-> crate::models::Device create_device(collection_id, body)
+> crate::models::Device span_create_device(collection_id, body)
 Create device
 
 Create a new device. This will add a device to the collection. You must have write access to the collection.
@@ -45,9 +45,9 @@ Name | Type | Description  | Required | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 
-## delete_device
+## span_delete_device
 
-> crate::models::Device delete_device(collection_id, device_id)
+> crate::models::Device span_delete_device(collection_id, device_id)
 Remove device
 
 ### Parameters
@@ -74,9 +74,9 @@ Name | Type | Description  | Required | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 
-## list_device_data
+## span_list_device_data
 
-> crate::models::ListDataResponse list_device_data(collection_id, device_id, limit, start, end, offset)
+> crate::models::ListDataResponse span_list_device_data(collection_id, device_id, limit, start, end, offset)
 Get payloads
 
 List the data received from the device. Use the query parameters to control what data you retrieve.
@@ -109,9 +109,9 @@ Name | Type | Description  | Required | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 
-## list_devices
+## span_list_devices
 
-> crate::models::ListDevicesResponse list_devices(collection_id)
+> crate::models::ListDevicesResponse span_list_devices(collection_id)
 List devices
 
 ### Parameters
@@ -137,9 +137,9 @@ Name | Type | Description  | Required | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 
-## retrieve_device
+## span_retrieve_device
 
-> crate::models::Device retrieve_device(collection_id, device_id)
+> crate::models::Device span_retrieve_device(collection_id, device_id)
 Retrieve device
 
 Retrieve a single device
@@ -168,9 +168,9 @@ Name | Type | Description  | Required | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 
-## send_message
+## span_send_message
 
-> crate::models::SendMessageResponse send_message(collection_id, device_id, body)
+> serde_json::Value span_send_message(collection_id, device_id, body)
 Send message
 
 Send a message to the device
@@ -186,7 +186,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::SendMessageResponse**](SendMessageResponse.md)
+[**serde_json::Value**](serde_json::Value.md)
 
 ### Authorization
 
@@ -200,9 +200,9 @@ Name | Type | Description  | Required | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 
-## update_device
+## span_update_device
 
-> crate::models::Device update_device(existing_collection_id, device_id, body)
+> crate::models::Device span_update_device(existing_collection_id, device_id, body)
 Update device
 
 ### Parameters

@@ -4,13 +4,13 @@ All URIs are relative to *https://api.lab5e.com/span*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**get_system_info**](SystemApi.md#get_system_info) | **get** /system | System information
+[**span_get_system_info**](SystemApi.md#span_get_system_info) | **get** /system | System information
 
 
 
-## get_system_info
+## span_get_system_info
 
-> crate::models::SystemInfoResponse get_system_info()
+> crate::models::SystemInfoResponse span_get_system_info()
 System information
 
 ### Parameters
