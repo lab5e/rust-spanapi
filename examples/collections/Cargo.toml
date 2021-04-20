@@ -1,0 +1,17 @@
+[package]
+name = "collections"
+version = "0.1.0"
+authors = ["Staale Dahl <stalehd@gmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+spanapi = { path="../.." }
+futures = "0.3"
+tokio = { version = "1", features = ["macros", "rt-multi-thread" ] }
+
+[dependencies.reqwest]
+version = "^0.11"
+default-features = false
+features = ["json", "multipart", "native-tls"]
