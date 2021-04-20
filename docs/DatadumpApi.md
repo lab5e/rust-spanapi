@@ -4,13 +4,13 @@ All URIs are relative to *https://api.lab5e.com/span*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**span_data_dump**](DatadumpApi.md#span_data_dump) | **post** /datadump | Data dump
+[**data_dump**](DatadumpApi.md#data_dump) | **post** /datadump | Data dump
 
 
 
-## span_data_dump
+## data_dump
 
-> crate::models::DataDumpResponse span_data_dump(body)
+> crate::models::DataDumpResponse data_dump(body)
 Data dump
 
 Do a complete data dump of your data, devices, outputs and collections.
@@ -20,7 +20,7 @@ Do a complete data dump of your data, devices, outputs and collections.
 
 Name | Type | Description  | Required | Notes
 ------------- | ------------- | ------------- | ------------- | -------------
-**body** | **serde_json::Value** |  | [required] |
+**body** | [**DataDumpRequest**](DataDumpRequest.md) |  | [required] |
 
 ### Return type
 

@@ -2,12 +2,14 @@
 Cargo.toml
 README.md
 docs/BroadcastMessageRequest.md
+docs/ClearFirmwareErrorResponse.md
 docs/CoApMetadata.md
 docs/Collection.md
 docs/CollectionFirmware.md
 docs/CollectionFirmwareFirmwareManagement.md
 docs/CollectionsApi.md
 docs/CreateFirmwareRequest.md
+docs/DataDumpRequest.md
 docs/DataDumpResponse.md
 docs/DatadumpApi.md
 docs/Device.md
@@ -39,6 +41,7 @@ docs/OutputsApi.md
 docs/ProtobufAny.md
 docs/RpcStatus.md
 docs/SendMessageRequest.md
+docs/SendMessageResponse.md
 docs/SystemApi.md
 docs/SystemInfoResponse.md
 docs/UdpMetadata.md
@@ -53,11 +56,13 @@ src/apis/outputs_api.rs
 src/apis/system_api.rs
 src/lib.rs
 src/models/broadcast_message_request.rs
+src/models/clear_firmware_error_response.rs
 src/models/co_ap_metadata.rs
 src/models/collection.rs
 src/models/collection_firmware.rs
 src/models/collection_firmware_firmware_management.rs
 src/models/create_firmware_request.rs
+src/models/data_dump_request.rs
 src/models/data_dump_response.rs
 src/models/device.rs
 src/models/dumped_collection.rs
@@ -86,6 +91,7 @@ src/models/output_type.rs
 src/models/protobuf_any.rs
 src/models/rpc_status.rs
 src/models/send_message_request.rs
+src/models/send_message_response.rs
 src/models/system_info_response.rs
 src/models/udp_metadata.rs
 src/models/update_device_request.rs
