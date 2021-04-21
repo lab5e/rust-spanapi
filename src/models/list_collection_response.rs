@@ -10,8 +10,6 @@
 
 /// ListCollectionResponse : Collection list. The list contains all the collections you have access to.
 
-
-
 #[derive(Clone, Debug, PartialEq, Serialize, Deserialize)]
 pub struct ListCollectionResponse {
     #[serde(rename = "collections", skip_serializing_if = "Option::is_none")]
@@ -21,10 +19,6 @@ pub struct ListCollectionResponse {
 impl ListCollectionResponse {
     /// Collection list. The list contains all the collections you have access to.
     pub fn new() -> ListCollectionResponse {
-        ListCollectionResponse {
-            collections: None,
-        }
+        ListCollectionResponse { collections: None }
     }
 }
-
-
