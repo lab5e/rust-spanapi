@@ -1,6 +1,6 @@
 [package]
 name = "spanapi"
-version = "4.1.10"
+version = "4.1.11"
 authors = ["OpenAPI Generator team and contributors"]
 edition = "2018"
 
