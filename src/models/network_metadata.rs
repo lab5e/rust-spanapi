@@ -10,8 +10,6 @@
 
 /// NetworkMetadata : Network metadata for devices.
 
-
-
 #[derive(Clone, Debug, PartialEq, Serialize, Deserialize)]
 pub struct NetworkMetadata {
     /// Allocated IP address.
@@ -34,5 +32,3 @@ impl NetworkMetadata {
         }
     }
 }
-
-
