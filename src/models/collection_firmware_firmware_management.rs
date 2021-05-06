@@ -21,7 +21,6 @@ pub enum CollectionFirmwareFirmwareManagement {
     Collection,
     #[serde(rename = "device")]
     Device,
-
 }
 
 impl ToString for CollectionFirmwareFirmwareManagement {
@@ -34,7 +33,3 @@ impl ToString for CollectionFirmwareFirmwareManagement {
         }
     }
 }
-
-
-
-
