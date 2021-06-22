@@ -13,6 +13,7 @@ docs/DataDumpRequest.md
 docs/DataDumpResponse.md
 docs/DatadumpApi.md
 docs/Device.md
+docs/DeviceMetadata.md
 docs/DevicesApi.md
 docs/DumpedCollection.md
 docs/DumpedDevice.md
@@ -29,6 +30,7 @@ docs/ListOutputResponse.md
 docs/MessageSendResult.md
 docs/MultiSendMessageResponse.md
 docs/NetworkMetadata.md
+docs/NetworkOperator.md
 docs/Output.md
 docs/OutputConfig.md
 docs/OutputDataMessage.md
@@ -65,6 +67,7 @@ src/models/create_firmware_request.rs
 src/models/data_dump_request.rs
 src/models/data_dump_response.rs
 src/models/device.rs
+src/models/device_metadata.rs
 src/models/dumped_collection.rs
 src/models/dumped_device.rs
 src/models/field_mask.rs
@@ -80,6 +83,7 @@ src/models/message_send_result.rs
 src/models/mod.rs
 src/models/multi_send_message_response.rs
 src/models/network_metadata.rs
+src/models/network_operator.rs
 src/models/output.rs
 src/models/output_config.rs
 src/models/output_data_message.rs

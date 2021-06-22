@@ -12,15 +12,15 @@
 
 
 #[derive(Clone, Debug, PartialEq, Serialize, Deserialize)]
-pub struct ListDataResponse {
-    #[serde(rename = "data", skip_serializing_if = "Option::is_none")]
-    pub data: Option<Vec<crate::models::OutputDataMessage>>,
+pub struct DeviceMetadata {
+    #[serde(rename = "simOperator", skip_serializing_if = "Option::is_none")]
+    pub sim_operator: Option<Box<crate::models::NetworkOperator>>,
 }
 
-impl ListDataResponse {
-    pub fn new() -> ListDataResponse {
-        ListDataResponse {
-            data: None,
+impl DeviceMetadata {
+    pub fn new() -> DeviceMetadata {
+        DeviceMetadata {
+            sim_operator: None,
         }
     }
 }

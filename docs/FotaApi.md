@@ -7,7 +7,7 @@ Method | HTTP request | Description
 [**clear_firmware_error**](FotaApi.md#clear_firmware_error) | **delete** /collections/{collectionId}/devices/{deviceId}/fwerror | Clear FOTA error
 [**create_firmware**](FotaApi.md#create_firmware) | **post** /collections/{collectionId}/firmware | Create firmware
 [**delete_firmware**](FotaApi.md#delete_firmware) | **delete** /collections/{collectionId}/firmware/{imageId} | Delete firmware
-[**firmware_usage**](FotaApi.md#firmware_usage) | **patch** /collections/{collectionId}/firmware/{imageId}/usage | Firmware usage
+[**firmware_usage**](FotaApi.md#firmware_usage) | **get** /collections/{collectionId}/firmware/{imageId}/usage | Firmware usage
 [**list_firmware**](FotaApi.md#list_firmware) | **get** /collections/{collectionId}/firmware | List firmware
 [**retrieve_firmware**](FotaApi.md#retrieve_firmware) | **get** /collections/{collectionId}/firmware/{imageId} | Retrieve firmware
 [**update_firmware**](FotaApi.md#update_firmware) | **patch** /collections/{collectionId}/firmware/{imageId} | Update firmware
