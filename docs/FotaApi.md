@@ -10,7 +10,7 @@ Method | HTTP request | Description
 [**firmware_usage**](FotaApi.md#firmware_usage) | **get** /collections/{collectionId}/firmware/{imageId}/usage | Firmware usage
 [**list_firmware**](FotaApi.md#list_firmware) | **get** /collections/{collectionId}/firmware | List firmware
 [**retrieve_firmware**](FotaApi.md#retrieve_firmware) | **get** /collections/{collectionId}/firmware/{imageId} | Retrieve firmware
-[**update_firmware**](FotaApi.md#update_firmware) | **patch** /collections/{collectionId}/firmware/{imageId} | Update firmware
+[**update_firmware**](FotaApi.md#update_firmware) | **patch** /collections/{collectionId}/firmware/{imageId} | Update firmware. Only the version and tags fields can be updated. The other fields will be ignored..
 
 
 
@@ -198,7 +198,7 @@ Name | Type | Description  | Required | Notes
 ## update_firmware
 
 > crate::models::Firmware update_firmware(collection_id, image_id, body)
-Update firmware
+Update firmware. Only the version and tags fields can be updated. The other fields will be ignored..
 
 ### Parameters
 

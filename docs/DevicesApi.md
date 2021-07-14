@@ -5,12 +5,12 @@ All URIs are relative to *https://api.lab5e.com/span*
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**create_device**](DevicesApi.md#create_device) | **post** /collections/{collectionId}/devices | Create device
-[**delete_device**](DevicesApi.md#delete_device) | **delete** /collections/{collectionId}/devices/{deviceId} | Remove device
+[**delete_device**](DevicesApi.md#delete_device) | **delete** /collections/{collectionId}/devices/{deviceId} | Remove device.
 [**list_device_data**](DevicesApi.md#list_device_data) | **get** /collections/{collectionId}/devices/{deviceId}/data | Get payloads
-[**list_devices**](DevicesApi.md#list_devices) | **get** /collections/{collectionId}/devices | List devices
+[**list_devices**](DevicesApi.md#list_devices) | **get** /collections/{collectionId}/devices | List devices in collection.
 [**retrieve_device**](DevicesApi.md#retrieve_device) | **get** /collections/{collectionId}/devices/{deviceId} | Retrieve device
-[**send_message**](DevicesApi.md#send_message) | **post** /collections/{collectionId}/devices/{deviceId}/to | Send message
-[**update_device**](DevicesApi.md#update_device) | **patch** /collections/{existingCollectionId}/devices/{deviceId} | Update device
+[**send_message**](DevicesApi.md#send_message) | **post** /collections/{collectionId}/devices/{deviceId}/to | Send message to a device.
+[**update_device**](DevicesApi.md#update_device) | **patch** /collections/{existingCollectionId}/devices/{deviceId} | Update device. The device can be moved from one collection to another by setting the collection ID field to the new collection. You must have administrative access to both collections.
 
 
 
@@ -48,7 +48,9 @@ Name | Type | Description  | Required | Notes
 ## delete_device
 
 > crate::models::Device delete_device(collection_id, device_id)
-Remove device
+Remove device.
+
+Remove device from collection
 
 ### Parameters
 
@@ -79,7 +81,7 @@ Name | Type | Description  | Required | Notes
 > crate::models::ListDataResponse list_device_data(collection_id, device_id, limit, start, end, offset)
 Get payloads
 
-List the data received from the device. Use the query parameters to control what data you retrieve.
+List the data received from the device. Use the query parameters to control what data you retrieve. The maximumnumber of data points is 100.
 
 ### Parameters
 
@@ -112,7 +114,9 @@ Name | Type | Description  | Required | Notes
 ## list_devices
 
 > crate::models::ListDevicesResponse list_devices(collection_id)
-List devices
+List devices in collection.
+
+List devices in collection
 
 ### Parameters
 
@@ -171,7 +175,7 @@ Name | Type | Description  | Required | Notes
 ## send_message
 
 > crate::models::SendMessageResponse send_message(collection_id, device_id, body)
-Send message
+Send message to a device.
 
 Send a message to the device
 
@@ -203,7 +207,9 @@ Name | Type | Description  | Required | Notes
 ## update_device
 
 > crate::models::Device update_device(existing_collection_id, device_id, body)
-Update device
+Update device. The device can be moved from one collection to another by setting the collection ID field to the new collection. You must have administrative access to both collections.
+
+Update device. The device can be moved from one collection to another by setting the collection ID field to the new collection. You must have administrative access to both collections.
 
 ### Parameters
 

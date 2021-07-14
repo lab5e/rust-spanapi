@@ -9,14 +9,9 @@ docs/CollectionFirmware.md
 docs/CollectionFirmwareFirmwareManagement.md
 docs/CollectionsApi.md
 docs/CreateFirmwareRequest.md
-docs/DataDumpRequest.md
-docs/DataDumpResponse.md
-docs/DatadumpApi.md
 docs/Device.md
 docs/DeviceMetadata.md
 docs/DevicesApi.md
-docs/DumpedCollection.md
-docs/DumpedDevice.md
 docs/FieldMask.md
 docs/Firmware.md
 docs/FirmwareMetadata.md
@@ -50,7 +45,6 @@ docs/UdpMetadata.md
 docs/UpdateDeviceRequest.md
 src/apis/collections_api.rs
 src/apis/configuration.rs
-src/apis/datadump_api.rs
 src/apis/devices_api.rs
 src/apis/fota_api.rs
 src/apis/mod.rs
@@ -64,12 +58,8 @@ src/models/collection.rs
 src/models/collection_firmware.rs
 src/models/collection_firmware_firmware_management.rs
 src/models/create_firmware_request.rs
-src/models/data_dump_request.rs
-src/models/data_dump_response.rs
 src/models/device.rs
 src/models/device_metadata.rs
-src/models/dumped_collection.rs
-src/models/dumped_device.rs
 src/models/field_mask.rs
 src/models/firmware.rs
 src/models/firmware_metadata.rs
