@@ -10,8 +10,6 @@
 
 /// SignCertificateResponse : Response when signing a certificate
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct SignCertificateResponse {
     #[serde(rename = "certificate", skip_serializing_if = "Option::is_none")]
@@ -29,5 +27,3 @@ impl SignCertificateResponse {
         }
     }
 }
-
-

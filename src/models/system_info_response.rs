@@ -10,8 +10,6 @@
 
 /// SystemInfoResponse : Response object for system information. This contains system-level information.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct SystemInfoResponse {
     /// This is the system version
@@ -35,5 +33,3 @@ impl SystemInfoResponse {
         }
     }
 }
-
-

@@ -10,8 +10,6 @@
 
 /// CellularIoTConfig : This is the cellular IOT config
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct CellularIoTConfig {
     #[serde(rename = "imsi", skip_serializing_if = "Option::is_none")]
@@ -30,5 +28,3 @@ impl CellularIoTConfig {
         }
     }
 }
-
-

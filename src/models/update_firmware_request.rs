@@ -10,8 +10,6 @@
 
 /// UpdateFirmwareRequest : This is the request object when updating the firmware image
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct UpdateFirmwareRequest {
     #[serde(rename = "collectionId", skip_serializing_if = "Option::is_none")]
@@ -32,5 +30,3 @@ impl UpdateFirmwareRequest {
         }
     }
 }
-
-

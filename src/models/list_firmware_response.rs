@@ -10,8 +10,6 @@
 
 /// ListFirmwareResponse : List firmware response
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct ListFirmwareResponse {
     #[serde(rename = "images", skip_serializing_if = "Option::is_none")]
@@ -21,10 +19,6 @@ pub struct ListFirmwareResponse {
 impl ListFirmwareResponse {
     /// List firmware response
     pub fn new() -> ListFirmwareResponse {
-        ListFirmwareResponse {
-            images: None,
-        }
+        ListFirmwareResponse { images: None }
     }
 }
-
-

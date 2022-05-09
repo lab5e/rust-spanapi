@@ -10,8 +10,6 @@
 
 /// ListNetworkResponse : List networks.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct ListNetworkResponse {
     #[serde(rename = "networks", skip_serializing_if = "Option::is_none")]
@@ -21,10 +19,6 @@ pub struct ListNetworkResponse {
 impl ListNetworkResponse {
     /// List networks.
     pub fn new() -> ListNetworkResponse {
-        ListNetworkResponse {
-            networks: None,
-        }
+        ListNetworkResponse { networks: None }
     }
 }
-
-

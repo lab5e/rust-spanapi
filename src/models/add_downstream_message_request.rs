@@ -10,8 +10,6 @@
 
 /// AddDownstreamMessageRequest : This is the request object to send messages out to the devices
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct AddDownstreamMessageRequest {
     #[serde(rename = "payload", skip_serializing_if = "Option::is_none")]
@@ -21,10 +19,6 @@ pub struct AddDownstreamMessageRequest {
 impl AddDownstreamMessageRequest {
     /// This is the request object to send messages out to the devices
     pub fn new() -> AddDownstreamMessageRequest {
-        AddDownstreamMessageRequest {
-            payload: None,
-        }
+        AddDownstreamMessageRequest { payload: None }
     }
 }
-
-

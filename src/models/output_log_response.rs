@@ -10,8 +10,6 @@
 
 /// OutputLogResponse : List logs for output
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct OutputLogResponse {
     #[serde(rename = "logs", skip_serializing_if = "Option::is_none")]
@@ -21,10 +19,6 @@ pub struct OutputLogResponse {
 impl OutputLogResponse {
     /// List logs for output
     pub fn new() -> OutputLogResponse {
-        OutputLogResponse {
-            logs: None,
-        }
+        OutputLogResponse { logs: None }
     }
 }
-
-

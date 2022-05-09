@@ -10,8 +10,6 @@
 
 /// ListDataResponse : List of device payloads
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct ListDataResponse {
     #[serde(rename = "data", skip_serializing_if = "Option::is_none")]
@@ -21,10 +19,6 @@ pub struct ListDataResponse {
 impl ListDataResponse {
     /// List of device payloads
     pub fn new() -> ListDataResponse {
-        ListDataResponse {
-            data: None,
-        }
+        ListDataResponse { data: None }
     }
 }
-
-

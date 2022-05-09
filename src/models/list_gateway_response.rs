@@ -10,8 +10,6 @@
 
 /// ListGatewayResponse : Response when listing gateways
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct ListGatewayResponse {
     #[serde(rename = "gateways", skip_serializing_if = "Option::is_none")]
@@ -21,10 +19,6 @@ pub struct ListGatewayResponse {
 impl ListGatewayResponse {
     /// Response when listing gateways
     pub fn new() -> ListGatewayResponse {
-        ListGatewayResponse {
-            gateways: None,
-        }
+        ListGatewayResponse { gateways: None }
     }
 }
-
-

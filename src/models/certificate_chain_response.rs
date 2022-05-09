@@ -10,8 +10,6 @@
 
 /// CertificateChainResponse : Response when retrieving a certificate chain
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct CertificateChainResponse {
     #[serde(rename = "chain", skip_serializing_if = "Option::is_none")]
@@ -21,10 +19,6 @@ pub struct CertificateChainResponse {
 impl CertificateChainResponse {
     /// Response when retrieving a certificate chain
     pub fn new() -> CertificateChainResponse {
-        CertificateChainResponse {
-            chain: None,
-        }
+        CertificateChainResponse { chain: None }
     }
 }
-
-

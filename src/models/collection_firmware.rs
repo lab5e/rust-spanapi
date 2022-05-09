@@ -10,8 +10,6 @@
 
 /// CollectionFirmware : This is the firmware configuration for a collection.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct CollectionFirmware {
     /// The current firmware is the firmware that the devices are currently using.
@@ -34,5 +32,3 @@ impl CollectionFirmware {
         }
     }
 }
-
-

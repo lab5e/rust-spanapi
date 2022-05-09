@@ -19,7 +19,6 @@ pub enum MessageTransport {
     Udp,
     #[serde(rename = "coap")]
     Coap,
-
 }
 
 impl ToString for MessageTransport {
@@ -37,7 +36,3 @@ impl Default for MessageTransport {
         Self::Unspecified
     }
 }
-
-
-
-

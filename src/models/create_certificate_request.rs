@@ -10,8 +10,6 @@
 
 /// CreateCertificateRequest : Request object to create a new certificate.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct CreateCertificateRequest {
     #[serde(rename = "gatewayId", skip_serializing_if = "Option::is_none")]
@@ -29,5 +27,3 @@ impl CreateCertificateRequest {
         }
     }
 }
-
-

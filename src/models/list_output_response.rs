@@ -10,8 +10,6 @@
 
 /// ListOutputResponse : List outputs
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct ListOutputResponse {
     #[serde(rename = "collectionId", skip_serializing_if = "Option::is_none")]
@@ -29,5 +27,3 @@ impl ListOutputResponse {
         }
     }
 }
-
-

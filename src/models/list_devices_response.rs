@@ -10,8 +10,6 @@
 
 /// ListDevicesResponse : List device response
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct ListDevicesResponse {
     #[serde(rename = "devices", skip_serializing_if = "Option::is_none")]
@@ -21,10 +19,6 @@ pub struct ListDevicesResponse {
 impl ListDevicesResponse {
     /// List device response
     pub fn new() -> ListDevicesResponse {
-        ListDevicesResponse {
-            devices: None,
-        }
+        ListDevicesResponse { devices: None }
     }
 }
-
-

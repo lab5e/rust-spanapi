@@ -10,8 +10,6 @@
 
 /// MessageDownstream : Downstream messages are sent from the backend to the devices.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct MessageDownstream {
     #[serde(rename = "messageId", skip_serializing_if = "Option::is_none")]
@@ -50,5 +48,3 @@ impl MessageDownstream {
         }
     }
 }
-
-

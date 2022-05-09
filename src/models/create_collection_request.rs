@@ -10,8 +10,6 @@
 
 /// CreateCollectionRequest : Request object when creating a collection. The collect ID is assigned by the service.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct CreateCollectionRequest {
     /// The team ID that owns the collection. This field is required. When you create new collections the default is to use your private team ID.
@@ -34,5 +32,3 @@ impl CreateCollectionRequest {
         }
     }
 }
-
-
