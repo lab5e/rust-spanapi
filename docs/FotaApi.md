@@ -1,16 +1,16 @@
 # \FotaApi
 
-All URIs are relative to *https://api.lab5e.com/span*
+All URIs are relative to *https://api.lab5e.com*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**clear_firmware_error**](FotaApi.md#clear_firmware_error) | **delete** /collections/{collectionId}/devices/{deviceId}/fwerror | Clear FOTA error
-[**create_firmware**](FotaApi.md#create_firmware) | **post** /collections/{collectionId}/firmware | Create firmware
-[**delete_firmware**](FotaApi.md#delete_firmware) | **delete** /collections/{collectionId}/firmware/{imageId} | Delete firmware
-[**firmware_usage**](FotaApi.md#firmware_usage) | **get** /collections/{collectionId}/firmware/{imageId}/usage | Firmware usage
-[**list_firmware**](FotaApi.md#list_firmware) | **get** /collections/{collectionId}/firmware | List firmware
-[**retrieve_firmware**](FotaApi.md#retrieve_firmware) | **get** /collections/{collectionId}/firmware/{imageId} | Retrieve firmware
-[**update_firmware**](FotaApi.md#update_firmware) | **patch** /collections/{collectionId}/firmware/{imageId} | Update firmware. Only the version and tags fields can be updated. The other fields will be ignored..
+[**clear_firmware_error**](FotaApi.md#clear_firmware_error) | **DELETE** /span/collections/{collectionId}/devices/{deviceId}/fwerror | Clear FOTA error
+[**create_firmware**](FotaApi.md#create_firmware) | **POST** /span/collections/{collectionId}/firmware | Create firmware
+[**delete_firmware**](FotaApi.md#delete_firmware) | **DELETE** /span/collections/{collectionId}/firmware/{imageId} | Delete firmware
+[**firmware_usage**](FotaApi.md#firmware_usage) | **GET** /span/collections/{collectionId}/firmware/{imageId}/usage | Firmware usage
+[**list_firmware**](FotaApi.md#list_firmware) | **GET** /span/collections/{collectionId}/firmware | List firmware
+[**retrieve_firmware**](FotaApi.md#retrieve_firmware) | **GET** /span/collections/{collectionId}/firmware/{imageId} | Retrieve firmware
+[**update_firmware**](FotaApi.md#update_firmware) | **PATCH** /span/collections/{existingCollectionId}/firmware/{imageId} | Update firmware
 
 
 
@@ -47,8 +47,6 @@ Name | Type | Description  | Required | Notes
 
 > crate::models::Firmware create_firmware(collection_id, body)
 Create firmware
-
-Create a new firmware image. This is also invoked by the custom HTTP uploader if the POST uses multipart/formdata for the request.
 
 ### Parameters
 
@@ -108,8 +106,6 @@ Name | Type | Description  | Required | Notes
 > crate::models::FirmwareUsageResponse firmware_usage(collection_id, image_id)
 Firmware usage
 
-Shows the firmware usage for devices in the collection
-
 ### Parameters
 
 
@@ -139,8 +135,6 @@ Name | Type | Description  | Required | Notes
 > crate::models::ListFirmwareResponse list_firmware(collection_id)
 List firmware
 
-Lists available firmware images in collection
-
 ### Parameters
 
 
@@ -169,8 +163,6 @@ Name | Type | Description  | Required | Notes
 > crate::models::Firmware retrieve_firmware(collection_id, image_id)
 Retrieve firmware
 
-Retrieve information on a firmware image
-
 ### Parameters
 
 
@@ -197,17 +189,19 @@ Name | Type | Description  | Required | Notes
 
 ## update_firmware
 
-> crate::models::Firmware update_firmware(collection_id, image_id, body)
-Update firmware. Only the version and tags fields can be updated. The other fields will be ignored..
+> crate::models::Firmware update_firmware(existing_collection_id, image_id, body)
+Update firmware
+
+Only the version and tags fields can be updated. The other fields will be ignored.
 
 ### Parameters
 
 
 Name | Type | Description  | Required | Notes
 ------------- | ------------- | ------------- | ------------- | -------------
-**collection_id** | **String** | Collection ID  Collection ID for the collection owning the firmware image. | [required] |
-**image_id** | **String** | Firmware image ID | [required] |
-**body** | [**Firmware**](Firmware.md) |  | [required] |
+**existing_collection_id** | **String** |  | [required] |
+**image_id** | **String** |  | [required] |
+**body** | [**UpdateFirmwareRequest**](UpdateFirmwareRequest.md) |  | [required] |
 
 ### Return type
 

@@ -10,7 +10,7 @@ Name | Type | Description | Notes
 **serial_number** | Option<**String**> |  | [optional]
 **model_number** | Option<**String**> |  | [optional]
 **manufacturer** | Option<**String**> |  | [optional]
-**state** | Option<**String**> | State of the firmware. | [optional]
+**state** | Option<**String**> |  | [optional]
 **state_message** | Option<**String**> |  | [optional]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**url** | Option<**String**> |  | [optional]
+**url** | Option<**String**> | URL for the webhook. | [optional]
 **basic_auth_user** | Option<**String**> |  | [optional]
 **basic_auth_pass** | Option<**String**> |  | [optional]
 **custom_header_name** | Option<**String**> |  | [optional]

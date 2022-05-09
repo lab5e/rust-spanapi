@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**mcc** | Option<**i32**> | The Mobil Country Code for the operator. | [optional]
+**mcc** | Option<**i32**> | The Mobile Country Code for the operator. | [optional]
 **mnc** | Option<**i32**> |  | [optional]
 **country** | Option<**String**> |  | [optional]
 **network** | Option<**String**> |  | [optional]

@@ -1,16 +1,16 @@
 # \OutputsApi
 
-All URIs are relative to *https://api.lab5e.com/span*
+All URIs are relative to *https://api.lab5e.com*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**create_output**](OutputsApi.md#create_output) | **post** /collections/{collectionId}/outputs | Create output
-[**delete_output**](OutputsApi.md#delete_output) | **delete** /collections/{collectionId}/outputs/{outputId} | Delete output
-[**list_outputs**](OutputsApi.md#list_outputs) | **get** /collections/{collectionId}/outputs | List outputs
-[**logs**](OutputsApi.md#logs) | **get** /collections/{collectionId}/outputs/{outputId}/logs | Output logs
-[**retrieve_output**](OutputsApi.md#retrieve_output) | **get** /collections/{collectionId}/outputs/{outputId} | Retrieve output
-[**status**](OutputsApi.md#status) | **get** /collections/{collectionId}/outputs/{outputId}/status | Output status
-[**update_output**](OutputsApi.md#update_output) | **patch** /collections/{collectionId}/outputs/{outputId} | Update output
+[**create_output**](OutputsApi.md#create_output) | **POST** /span/collections/{collectionId}/outputs | Create output
+[**delete_output**](OutputsApi.md#delete_output) | **DELETE** /span/collections/{collectionId}/outputs/{outputId} | Delete output
+[**list_outputs**](OutputsApi.md#list_outputs) | **GET** /span/collections/{collectionId}/outputs | List outputs
+[**logs**](OutputsApi.md#logs) | **GET** /span/collections/{collectionId}/outputs/{outputId}/logs | Output logs
+[**retrieve_output**](OutputsApi.md#retrieve_output) | **GET** /span/collections/{collectionId}/outputs/{outputId} | Retrieve output
+[**status**](OutputsApi.md#status) | **GET** /span/collections/{collectionId}/outputs/{outputId}/status | Output status
+[**update_output**](OutputsApi.md#update_output) | **PATCH** /span/collections/{existingCollectionId}/outputs/{outputId} | Update output
 
 
 
@@ -25,7 +25,7 @@ Create output
 Name | Type | Description  | Required | Notes
 ------------- | ------------- | ------------- | ------------- | -------------
 **collection_id** | **String** |  | [required] |
-**body** | [**Output**](Output.md) |  | [required] |
+**body** | [**CreateOutputRequest**](CreateOutputRequest.md) |  | [required] |
 
 ### Return type
 
@@ -189,19 +189,17 @@ Name | Type | Description  | Required | Notes
 
 ## update_output
 
-> crate::models::Output update_output(collection_id, output_id, body)
+> crate::models::Output update_output(existing_collection_id, output_id, body)
 Update output
-
-Running outputs will be restarted if required. Note that the collection ID can't be changed on an existing output.
 
 ### Parameters
 
 
 Name | Type | Description  | Required | Notes
 ------------- | ------------- | ------------- | ------------- | -------------
-**collection_id** | **String** |  | [required] |
+**existing_collection_id** | **String** |  | [required] |
 **output_id** | **String** |  | [required] |
-**body** | [**Output**](Output.md) |  | [required] |
+**body** | [**UpdateOutputRequest**](UpdateOutputRequest.md) |  | [required] |
 
 ### Return type
 

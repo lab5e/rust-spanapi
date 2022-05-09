@@ -1,48 +1,16 @@
 # \CollectionsApi
 
-All URIs are relative to *https://api.lab5e.com/span*
+All URIs are relative to *https://api.lab5e.com*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**broadcast_message**](CollectionsApi.md#broadcast_message) | **post** /collections/{collectionId}/to | Broadcast message
-[**create_collection**](CollectionsApi.md#create_collection) | **post** /collections | Create collection
-[**delete_collection**](CollectionsApi.md#delete_collection) | **delete** /collections/{collectionId} | Delete collection
-[**list_collection_data**](CollectionsApi.md#list_collection_data) | **get** /collections/{collectionId}/data | Get payloads
-[**list_collections**](CollectionsApi.md#list_collections) | **get** /collections | List collections
-[**retrieve_collection**](CollectionsApi.md#retrieve_collection) | **get** /collections/{collectionId} | Retrieve collection
-[**update_collection**](CollectionsApi.md#update_collection) | **patch** /collections/{collectionId} | Update collection
+[**create_collection**](CollectionsApi.md#create_collection) | **POST** /span/collections | Create collection
+[**delete_collection**](CollectionsApi.md#delete_collection) | **DELETE** /span/collections/{collectionId} | Delete collection
+[**list_collection_data**](CollectionsApi.md#list_collection_data) | **GET** /span/collections/{collectionId}/data | Retrieve data from devices
+[**list_collections**](CollectionsApi.md#list_collections) | **GET** /span/collections | List collections
+[**retrieve_collection**](CollectionsApi.md#retrieve_collection) | **GET** /span/collections/{collectionId} | Retrieve collection
+[**update_collection**](CollectionsApi.md#update_collection) | **PATCH** /span/collections/{collectionId} | Update collection
 
-
-
-## broadcast_message
-
-> crate::models::MultiSendMessageResponse broadcast_message(collection_id, body)
-Broadcast message
-
-Broadcast a message to all devices in the collection. This request will always succeed if the collection exists, even if there are one or more send errors. Individual errors are returned as an array of error messages in the response. Use equivalent to resource for devices to send a message to single device.
-
-### Parameters
-
-
-Name | Type | Description  | Required | Notes
-------------- | ------------- | ------------- | ------------- | -------------
-**collection_id** | **String** |  | [required] |
-**body** | [**BroadcastMessageRequest**](BroadcastMessageRequest.md) |  | [required] |
-
-### Return type
-
-[**crate::models::MultiSendMessageResponse**](MultiSendMessageResponse.md)
-
-### Authorization
-
-[APIToken](../README.md#APIToken)
-
-### HTTP request headers
-
-- **Content-Type**: application/json
-- **Accept**: application/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 
 ## create_collection
@@ -50,14 +18,14 @@ Name | Type | Description  | Required | Notes
 > crate::models::Collection create_collection(body)
 Create collection
 
-The returned collection is the collection stored in the backend. Defaults have been set. There are no required fields in a collection
+Create a new collection
 
 ### Parameters
 
 
 Name | Type | Description  | Required | Notes
 ------------- | ------------- | ------------- | ------------- | -------------
-**body** | [**Collection**](Collection.md) |  | [required] |
+**body** | [**CreateCollectionRequest**](CreateCollectionRequest.md) |  | [required] |
 
 ### Return type
 
@@ -80,7 +48,7 @@ Name | Type | Description  | Required | Notes
 > crate::models::Collection delete_collection(collection_id)
 Delete collection
 
-You must have write access to the collection
+Remove the collection. Devices, firmware images, outputs and all other related resources must be removed from the collection before it can be deleted.
 
 ### Parameters
 
@@ -108,9 +76,9 @@ Name | Type | Description  | Required | Notes
 ## list_collection_data
 
 > crate::models::ListDataResponse list_collection_data(collection_id, limit, start, end, offset)
-Get payloads
+Retrieve data from devices
 
-List the data received from all the devices in the collection. The maximum number of data points is 100.
+Retrieve data sent by the devices in the collection. The maximum number of data points is 100.
 
 ### Parameters
 
@@ -199,7 +167,7 @@ Name | Type | Description  | Required | Notes
 > crate::models::Collection update_collection(collection_id, body)
 Update collection
 
-You must have write access to the collection, ie. you must administer it
+Update a collection.
 
 ### Parameters
 
@@ -207,7 +175,7 @@ You must have write access to the collection, ie. you must administer it
 Name | Type | Description  | Required | Notes
 ------------- | ------------- | ------------- | ------------- | -------------
 **collection_id** | **String** | The ID of the collection. This is assigned by the backend. | [required] |
-**body** | [**Collection**](Collection.md) |  | [required] |
+**body** | [**UpdateCollectionRequest**](UpdateCollectionRequest.md) |  | [required] |
 
 ### Return type
 

@@ -4,7 +4,6 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**collection_id** | Option<**String**> |  | [optional]
 **image** | Option<**String**> |  | [optional]
 **version** | Option<**String**> |  | [optional]
 **filename** | Option<**String**> |  | [optional]
