@@ -10,8 +10,6 @@
 
 /// OutputDataMessage : The output data message contains payload plus metadata for a payload received from a device.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct OutputDataMessage {
     #[serde(rename = "type", skip_serializing_if = "Option::is_none")]
@@ -48,5 +46,3 @@ impl OutputDataMessage {
         }
     }
 }
-
-

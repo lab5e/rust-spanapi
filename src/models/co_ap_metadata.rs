@@ -10,8 +10,6 @@
 
 /// CoApMetadata : CoAP metadata for messages received through one of the CoAP endpoints
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct CoApMetadata {
     #[serde(rename = "code", skip_serializing_if = "Option::is_none")]
@@ -29,5 +27,3 @@ impl CoApMetadata {
         }
     }
 }
-
-

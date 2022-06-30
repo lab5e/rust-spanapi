@@ -10,8 +10,6 @@
 
 /// Collection : This is a collection
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct Collection {
     /// The ID of the collection. This is assigned by the backend.
@@ -38,5 +36,3 @@ impl Collection {
         }
     }
 }
-
-

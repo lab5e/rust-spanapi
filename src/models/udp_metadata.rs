@@ -10,8 +10,6 @@
 
 /// UdpMetadata : UDP metadata for messages receveied through one of the UDP endpoints
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct UdpMetadata {
     #[serde(rename = "localPort", skip_serializing_if = "Option::is_none")]
@@ -29,5 +27,3 @@ impl UdpMetadata {
         }
     }
 }
-
-

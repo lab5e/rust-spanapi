@@ -10,8 +10,6 @@
 
 /// CreateCertificateResponse : Response when creating a new certificate
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct CreateCertificateResponse {
     #[serde(rename = "certificate", skip_serializing_if = "Option::is_none")]
@@ -32,5 +30,3 @@ impl CreateCertificateResponse {
         }
     }
 }
-
-

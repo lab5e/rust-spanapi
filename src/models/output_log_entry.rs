@@ -10,8 +10,6 @@
 
 /// OutputLogEntry : Log entries for outputs
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct OutputLogEntry {
     #[serde(rename = "time", skip_serializing_if = "Option::is_none")]
@@ -32,5 +30,3 @@ impl OutputLogEntry {
         }
     }
 }
-
-
