@@ -5,10 +5,10 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **gateway_id** | Option<**String**> |  | [optional]
-**allocated_ip** | Option<**String**> |  | [optional]
+**allocated_ip** | Option<**String**> | Allocated IP address. | [optional]
 **allocated_at** | Option<**String**> |  | [optional]
 **cell_id** | Option<**String**> |  | [optional]
-**mcc** | Option<**i32**> | the provider in use. | [optional]
+**mcc** | Option<**i32**> | the provider in use.  The Mobile Country Code for the operator. | [optional]
 **mnc** | Option<**i32**> |  | [optional]
 **country** | Option<**String**> |  | [optional]
 **network** | Option<**String**> |  | [optional]

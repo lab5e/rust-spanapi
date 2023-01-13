@@ -78,6 +78,8 @@ pub mod message_transport;
 pub use self::message_transport::MessageTransport;
 pub mod message_upstream;
 pub use self::message_upstream::MessageUpstream;
+pub mod mqtt_metadata;
+pub use self::mqtt_metadata::MqttMetadata;
 pub mod network;
 pub use self::network::Network;
 pub mod network_metadata;

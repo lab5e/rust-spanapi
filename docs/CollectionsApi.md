@@ -25,7 +25,7 @@ Create a new collection
 
 Name | Type | Description  | Required | Notes
 ------------- | ------------- | ------------- | ------------- | -------------
-**body** | [**CreateCollectionRequest**](CreateCollectionRequest.md) |  | [required] |
+**body** | [**CreateCollectionRequest**](CreateCollectionRequest.md) | Request object when creating a collection. The collect ID is assigned by the service. | [required] |
 
 ### Return type
 

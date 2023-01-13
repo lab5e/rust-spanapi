@@ -12,6 +12,7 @@ Name | Type | Description | Notes
 **udp_meta_data** | Option<[**crate::models::UdpMetadata**](UDPMetadata.md)> |  | [optional]
 **coap_meta_data** | Option<[**crate::models::CoApMetadata**](CoAPMetadata.md)> |  | [optional]
 **message_id** | Option<**String**> |  | [optional]
+**mqtt_meta_data** | Option<[**crate::models::MqttMetadata**](MQTTMetadata.md)> |  | [optional]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

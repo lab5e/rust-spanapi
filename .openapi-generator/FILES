@@ -46,6 +46,7 @@ docs/MessageDownstream.md
 docs/MessageState.md
 docs/MessageTransport.md
 docs/MessageUpstream.md
+docs/MqttMetadata.md
 docs/Network.md
 docs/NetworkMetadata.md
 docs/NetworkOperator.md
@@ -121,6 +122,7 @@ src/models/message_state.rs
 src/models/message_transport.rs
 src/models/message_upstream.rs
 src/models/mod.rs
+src/models/mqtt_metadata.rs
 src/models/network.rs
 src/models/network_metadata.rs
 src/models/network_operator.rs
