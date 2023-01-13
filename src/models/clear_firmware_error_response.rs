@@ -10,8 +10,6 @@
 
 /// ClearFirmwareErrorResponse : Clear firmware error response object
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct ClearFirmwareErrorResponse {
     #[serde(rename = "result", skip_serializing_if = "Option::is_none")]
@@ -21,10 +19,6 @@ pub struct ClearFirmwareErrorResponse {
 impl ClearFirmwareErrorResponse {
     /// Clear firmware error response object
     pub fn new() -> ClearFirmwareErrorResponse {
-        ClearFirmwareErrorResponse {
-            result: None,
-        }
+        ClearFirmwareErrorResponse { result: None }
     }
 }
-
-

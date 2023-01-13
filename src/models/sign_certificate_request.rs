@@ -10,8 +10,6 @@
 
 /// SignCertificateRequest : Request certificate signing
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct SignCertificateRequest {
     #[serde(rename = "gatewayId", skip_serializing_if = "Option::is_none")]
@@ -32,5 +30,3 @@ impl SignCertificateRequest {
         }
     }
 }
-
-

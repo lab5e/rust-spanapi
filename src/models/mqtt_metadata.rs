@@ -10,8 +10,6 @@
 
 /// MqttMetadata : MQTT metadata for messages received through one of the MQTT endpoints. This is an EXPERIMENTAL feature.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct MqttMetadata {
     #[serde(rename = "topic", skip_serializing_if = "Option::is_none")]
@@ -21,10 +19,6 @@ pub struct MqttMetadata {
 impl MqttMetadata {
     /// MQTT metadata for messages received through one of the MQTT endpoints. This is an EXPERIMENTAL feature.
     pub fn new() -> MqttMetadata {
-        MqttMetadata {
-            topic: None,
-        }
+        MqttMetadata { topic: None }
     }
 }
-
-

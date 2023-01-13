@@ -10,8 +10,6 @@
 
 /// VerifyCertificateRequest : Verify a certificate
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct VerifyCertificateRequest {
     #[serde(rename = "gatewayId", skip_serializing_if = "Option::is_none")]
@@ -32,5 +30,3 @@ impl VerifyCertificateRequest {
         }
     }
 }
-
-

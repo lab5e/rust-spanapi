@@ -10,8 +10,6 @@
 
 /// CellularIoTMetadata : This is the metadata for a Cellular IoT device connected via an APN.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct CellularIoTMetadata {
     #[serde(rename = "gatewayId", skip_serializing_if = "Option::is_none")]
@@ -55,5 +53,3 @@ impl CellularIoTMetadata {
         }
     }
 }
-
-

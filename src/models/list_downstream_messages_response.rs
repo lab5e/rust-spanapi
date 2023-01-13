@@ -10,8 +10,6 @@
 
 /// ListDownstreamMessagesResponse : Response object when listing downstream messages
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct ListDownstreamMessagesResponse {
     #[serde(rename = "messages", skip_serializing_if = "Option::is_none")]
@@ -21,10 +19,6 @@ pub struct ListDownstreamMessagesResponse {
 impl ListDownstreamMessagesResponse {
     /// Response object when listing downstream messages
     pub fn new() -> ListDownstreamMessagesResponse {
-        ListDownstreamMessagesResponse {
-            messages: None,
-        }
+        ListDownstreamMessagesResponse { messages: None }
     }
 }
-
-

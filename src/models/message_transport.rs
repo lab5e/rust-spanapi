@@ -21,7 +21,6 @@ pub enum MessageTransport {
     Coap,
     #[serde(rename = "mqtt")]
     Mqtt,
-
 }
 
 impl ToString for MessageTransport {
@@ -40,7 +39,3 @@ impl Default for MessageTransport {
         Self::Unspecified
     }
 }
-
-
-
-

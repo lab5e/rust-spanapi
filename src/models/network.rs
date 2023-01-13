@@ -10,8 +10,6 @@
 
 /// Network : Network is the network devices runs on. They communicate via gateway to Span.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct Network {
     #[serde(rename = "networkId", skip_serializing_if = "Option::is_none")]
@@ -29,5 +27,3 @@ impl Network {
         }
     }
 }
-
-
