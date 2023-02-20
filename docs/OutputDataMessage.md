@@ -13,6 +13,8 @@ Name | Type | Description | Notes
 **coap_meta_data** | Option<[**crate::models::CoApMetadata**](CoAPMetadata.md)> |  | [optional]
 **message_id** | Option<**String**> |  | [optional]
 **mqtt_meta_data** | Option<[**crate::models::MqttMetadata**](MQTTMetadata.md)> |  | [optional]
+**gateway_meta_data** | Option<[**crate::models::GatewayMetadata**](GatewayMetadata.md)> |  | [optional]
+**gateway_id** | Option<**String**> |  | [optional]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

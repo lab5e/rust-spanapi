@@ -174,7 +174,7 @@ Name | Type | Description  | Required | Notes
 > crate::models::ListDataResponse list_device_data(collection_id, device_id, limit, start, end, offset)
 Retrieve data from device
 
-List the data received from the device. Use the query parameters to control what data you retrieve. The  maximum number of data points is 100.
+List the data received from the device. Use the query parameters to control what data you retrieve. The maximum number of data points is 100.
 
 ### Parameters
 
@@ -272,7 +272,7 @@ Name | Type | Description  | Required | Notes
 > crate::models::ListUpstreamMessagesResponse list_upstream_messages(collection_id, device_id, limit, start, end, offset)
 List incoming messages
 
-Retrieve a list of incoming (ie upstream) messages, ie messages sent from the device to the service.  These messages are buffered in the service until they expire.   Use the query parameters to limit the number of messages to return. If no limit is specified the default limit of 250 is used.
+Retrieve a list of incoming (ie upstream) messages, ie messages sent from the device to the service. These messages are buffered in the service until they expire.  Use the query parameters to limit the number of messages to return. If no limit is specified the default limit of 250 is used.
 
 ### Parameters
 
@@ -336,7 +336,7 @@ Name | Type | Description  | Required | Notes
 > crate::models::Device update_device(existing_collection_id, device_id, body)
 Update device
 
-The device can be moved from one collection to another by setting the collection ID field to the new  collection. You must have administrative access to both collections.
+The device can be moved from one collection to another by setting the collection ID field to the new collection. You must have administrative access to both collections. A note on gateway configurations: Empty gateway configuration blocks are deleted. If the configuration block contains a gateway ID it will be updated  with the new values. All values must be submitted in the request.
 
 ### Parameters
 
