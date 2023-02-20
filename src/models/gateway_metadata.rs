@@ -10,8 +10,6 @@
 
 /// GatewayMetadata : Metadata for gateway transports. The actual contents varies from gateway to gateway
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct GatewayMetadata {
     #[serde(rename = "metadata", skip_serializing_if = "Option::is_none")]
@@ -21,10 +19,6 @@ pub struct GatewayMetadata {
 impl GatewayMetadata {
     /// Metadata for gateway transports. The actual contents varies from gateway to gateway
     pub fn new() -> GatewayMetadata {
-        GatewayMetadata {
-            metadata: None,
-        }
+        GatewayMetadata { metadata: None }
     }
 }
-
-

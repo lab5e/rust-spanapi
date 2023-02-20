@@ -10,8 +10,6 @@
 
 /// CreateFirmwareRequest : Create a new firmware image
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct CreateFirmwareRequest {
     #[serde(rename = "image", skip_serializing_if = "Option::is_none")]
@@ -35,5 +33,3 @@ impl CreateFirmwareRequest {
         }
     }
 }
-
-

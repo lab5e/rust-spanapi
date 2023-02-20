@@ -10,8 +10,6 @@
 
 /// DeviceMetadata : This is the metadata for devices.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct DeviceMetadata {
     #[serde(rename = "simOperator", skip_serializing_if = "Option::is_none")]
@@ -35,5 +33,3 @@ impl DeviceMetadata {
         }
     }
 }
-
-

@@ -10,8 +10,6 @@
 
 /// CreateOutputRequest : Request type when creating new outputs
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct CreateOutputRequest {
     #[serde(rename = "type", skip_serializing_if = "Option::is_none")]
@@ -35,5 +33,3 @@ impl CreateOutputRequest {
         }
     }
 }
-
-

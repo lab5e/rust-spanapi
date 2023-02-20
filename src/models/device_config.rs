@@ -10,8 +10,6 @@
 
 /// DeviceConfig : This is the configuration for the device via the various gateways.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct DeviceConfig {
     #[serde(rename = "ciot", skip_serializing_if = "Option::is_none")]
@@ -33,5 +31,3 @@ impl DeviceConfig {
         }
     }
 }
-
-

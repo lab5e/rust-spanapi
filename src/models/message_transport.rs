@@ -27,7 +27,6 @@ pub enum MessageTransport {
     Coaps,
     #[serde(rename = "dtls")]
     Dtls,
-
 }
 
 impl ToString for MessageTransport {
@@ -49,7 +48,3 @@ impl Default for MessageTransport {
         Self::Unspecified
     }
 }
-
-
-
-

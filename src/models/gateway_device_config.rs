@@ -10,8 +10,6 @@
 
 /// GatewayDeviceConfig : Configuration parameters for a device in a user-managed gateway. The configuration parameters depends on the type of gateway.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct GatewayDeviceConfig {
     /// This is the ID of the gateway this configuration applies to.
@@ -30,5 +28,3 @@ impl GatewayDeviceConfig {
         }
     }
 }
-
-
