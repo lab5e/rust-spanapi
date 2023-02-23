@@ -10,8 +10,6 @@
 
 /// DeleteDownstreamMessageResponse : Response object when deleting a downstream message
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct DeleteDownstreamMessageResponse {
     #[serde(rename = "messageId", skip_serializing_if = "Option::is_none")]
@@ -21,10 +19,6 @@ pub struct DeleteDownstreamMessageResponse {
 impl DeleteDownstreamMessageResponse {
     /// Response object when deleting a downstream message
     pub fn new() -> DeleteDownstreamMessageResponse {
-        DeleteDownstreamMessageResponse {
-            message_id: None,
-        }
+        DeleteDownstreamMessageResponse { message_id: None }
     }
 }
-
-

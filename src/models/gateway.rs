@@ -10,8 +10,6 @@
 
 /// Gateway : A gateway is a connection between devices and Span
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct Gateway {
     #[serde(rename = "gatewayId", skip_serializing_if = "Option::is_none")]
@@ -47,5 +45,3 @@ impl Gateway {
         }
     }
 }
-
-

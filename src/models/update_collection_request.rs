@@ -10,8 +10,6 @@
 
 /// UpdateCollectionRequest : Request object when updating a collection
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct UpdateCollectionRequest {
     /// The team ID that owns the collection. This field is required. When you create new collections the default is to use your private team ID.
@@ -34,5 +32,3 @@ impl UpdateCollectionRequest {
         }
     }
 }
-
-

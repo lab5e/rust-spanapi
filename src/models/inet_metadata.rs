@@ -10,8 +10,6 @@
 
 /// InetMetadata : Metadata for devices connected via the internet gateway. This metadata shows the configuration for the last message transmission.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct InetMetadata {
     #[serde(rename = "gatewayId", skip_serializing_if = "Option::is_none")]
@@ -35,5 +33,3 @@ impl InetMetadata {
         }
     }
 }
-
-

@@ -10,8 +10,6 @@
 
 /// Firmware : Firmware images aren't served back out through the API, only the metadata.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct Firmware {
     #[serde(rename = "imageId", skip_serializing_if = "Option::is_none")]
@@ -52,5 +50,3 @@ impl Firmware {
         }
     }
 }
-
-

@@ -10,8 +10,6 @@
 
 /// FirmwareMetadata : Metadata about firmware on devices.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct FirmwareMetadata {
     #[serde(rename = "currentFirmwareId", skip_serializing_if = "Option::is_none")]
@@ -48,5 +46,3 @@ impl FirmwareMetadata {
         }
     }
 }
-
-

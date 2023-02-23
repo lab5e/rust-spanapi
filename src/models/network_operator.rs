@@ -10,8 +10,6 @@
 
 /// NetworkOperator : Operator holds information on the network operator. There might be several operators involved; one operator is running the network your devices are connected to and the SIM card in your device belongs to a different operator.  Deprecated: Replaced by CellularIoTMetadata
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct NetworkOperator {
     /// The Mobile Country Code for the operator.
@@ -39,5 +37,3 @@ impl NetworkOperator {
         }
     }
 }
-
-

@@ -10,8 +10,6 @@
 
 /// VerifyCertificateResponse : Response when verifying a certificate. The valid flag is set to true when the certificate is valid. Any errors will be added to the errors array.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct VerifyCertificateResponse {
     #[serde(rename = "valid", skip_serializing_if = "Option::is_none")]
@@ -29,5 +27,3 @@ impl VerifyCertificateResponse {
         }
     }
 }
-
-

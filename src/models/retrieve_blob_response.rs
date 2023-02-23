@@ -10,8 +10,6 @@
 
 /// RetrieveBlobResponse : This is not available throught the API, just as a regular HTTP response
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct RetrieveBlobResponse {
     #[serde(rename = "contentType", skip_serializing_if = "Option::is_none")]
@@ -32,5 +30,3 @@ impl RetrieveBlobResponse {
         }
     }
 }
-
-
