@@ -10,8 +10,6 @@
 
 /// UpdateDeviceRequest : Updating the device
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct UpdateDeviceRequest {
     /// The collection id for the device. This field is optional and can be omitted if the collection id isn't changed. When changing to a new collection you must be an owner of the other collection, ie an administrator of the team that owns the new collection.
@@ -37,5 +35,3 @@ impl UpdateDeviceRequest {
         }
     }
 }
-
-

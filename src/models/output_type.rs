@@ -25,7 +25,6 @@ pub enum OutputType {
     Ifttt,
     #[serde(rename = "mqttbroker")]
     Mqttbroker,
-
 }
 
 impl ToString for OutputType {
@@ -46,7 +45,3 @@ impl Default for OutputType {
         Self::Undefined
     }
 }
-
-
-
-

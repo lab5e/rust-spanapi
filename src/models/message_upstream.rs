@@ -10,8 +10,6 @@
 
 /// MessageUpstream : This is the messages sent from the device to the backend service
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct MessageUpstream {
     #[serde(rename = "messageId", skip_serializing_if = "Option::is_none")]
@@ -44,5 +42,3 @@ impl MessageUpstream {
         }
     }
 }
-
-

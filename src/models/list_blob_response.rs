@@ -10,8 +10,6 @@
 
 /// ListBlobResponse : Response object when listing blobs for a collection
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct ListBlobResponse {
     #[serde(rename = "blobs", skip_serializing_if = "Option::is_none")]
@@ -21,10 +19,6 @@ pub struct ListBlobResponse {
 impl ListBlobResponse {
     /// Response object when listing blobs for a collection
     pub fn new() -> ListBlobResponse {
-        ListBlobResponse {
-            blobs: None,
-        }
+        ListBlobResponse { blobs: None }
     }
 }
-
-

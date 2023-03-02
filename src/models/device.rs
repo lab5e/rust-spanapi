@@ -10,8 +10,6 @@
 
 /// Device : This a device
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct Device {
     /// The device ID is assigned by the backend.
@@ -55,5 +53,3 @@ impl Device {
         }
     }
 }
-
-

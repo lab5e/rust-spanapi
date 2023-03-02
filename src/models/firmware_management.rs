@@ -21,7 +21,6 @@ pub enum FirmwareManagement {
     Collection,
     #[serde(rename = "device")]
     Device,
-
 }
 
 impl ToString for FirmwareManagement {
@@ -40,7 +39,3 @@ impl Default for FirmwareManagement {
         Self::Unspecified
     }
 }
-
-
-
-

@@ -10,8 +10,6 @@
 
 /// FirmwareUsageResponse : Firmware usage report
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct FirmwareUsageResponse {
     #[serde(rename = "imageId", skip_serializing_if = "Option::is_none")]
@@ -32,5 +30,3 @@ impl FirmwareUsageResponse {
         }
     }
 }
-
-

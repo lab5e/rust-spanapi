@@ -10,8 +10,6 @@
 
 /// GatewayDeviceMetadata : Metadata for devices connected via user-managed gateways. This metadata shows the configuration for the last message transmission
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct GatewayDeviceMetadata {
     #[serde(rename = "gatewayId", skip_serializing_if = "Option::is_none")]
@@ -32,5 +30,3 @@ impl GatewayDeviceMetadata {
         }
     }
 }
-
-

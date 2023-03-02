@@ -10,8 +10,6 @@
 
 /// CertificateInfo : Certificate information
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct CertificateInfo {
     #[serde(rename = "certificateSerial", skip_serializing_if = "Option::is_none")]
@@ -29,5 +27,3 @@ impl CertificateInfo {
         }
     }
 }
-
-

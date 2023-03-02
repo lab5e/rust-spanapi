@@ -10,8 +10,6 @@
 
 /// DeviceCertificateResponse : Response object for certificate info resource
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct DeviceCertificateResponse {
     #[serde(rename = "certificates", skip_serializing_if = "Option::is_none")]
@@ -21,10 +19,6 @@ pub struct DeviceCertificateResponse {
 impl DeviceCertificateResponse {
     /// Response object for certificate info resource
     pub fn new() -> DeviceCertificateResponse {
-        DeviceCertificateResponse {
-            certificates: None,
-        }
+        DeviceCertificateResponse { certificates: None }
     }
 }
-
-
