@@ -112,7 +112,7 @@ Name | Type | Description  | Required | Notes
 > crate::models::ListCollectionResponse list_collections()
 List collections
 
-Lists all the collections that one of your teams owns.
+Lists all the collections that one of your teams owns. The collections returned includes only the data on the collection and not the summary information
 
 ### Parameters
 
@@ -136,8 +136,10 @@ This endpoint does not need any parameter.
 
 ## retrieve_collection
 
-> crate::models::Collection retrieve_collection(collection_id)
+> crate::models::Collection retrieve_collection(collection_id, upstream, downstream)
 Retrieve collection
+
+Retrieve collection information. This includes a list of the most recent messages in the inbox. The upstream and downstream parameters are optional and if set to true will include the timestamps for up to 100 messages up- and downstream for the last hour.
 
 ### Parameters
 
@@ -145,6 +147,8 @@ Retrieve collection
 Name | Type | Description  | Required | Notes
 ------------- | ------------- | ------------- | ------------- | -------------
 **collection_id** | **String** | The collection ID of the collection you are requesting | [required] |
+**upstream** | Option<**bool**> |  |  |
+**downstream** | Option<**bool**> |  |  |
 
 ### Return type
 

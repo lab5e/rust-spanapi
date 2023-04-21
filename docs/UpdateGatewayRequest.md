@@ -1,4 +1,4 @@
-# InlineObject1
+# UpdateGatewayRequest
 
 ## Properties
 
@@ -6,7 +6,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **name** | Option<**String**> |  | [optional]
 **collection_id** | Option<**String**> |  | [optional]
-**_type** | Option<[**crate::models::GatewayType**](GatewayType.md)> |  | [optional]
+**r#type** | Option<[**crate::models::GatewayType**](GatewayType.md)> |  | [optional]
 **config** | Option<[**crate::models::GatewayConfig**](GatewayConfig.md)> |  | [optional]
 **tags** | Option<**::std::collections::HashMap<String, String>**> |  | [optional]
 

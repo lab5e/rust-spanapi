@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**_type** | Option<[**crate::models::OutputType**](OutputType.md)> |  | [optional]
+**r#type** | Option<[**crate::models::OutputType**](OutputType.md)> |  | [optional]
 **config** | Option<[**crate::models::OutputConfig**](OutputConfig.md)> |  | [optional]
 **enabled** | Option<**bool**> |  | [optional]
 **tags** | Option<**::std::collections::HashMap<String, String>**> |  | [optional]

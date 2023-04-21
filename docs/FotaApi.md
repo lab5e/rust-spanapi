@@ -48,6 +48,8 @@ Name | Type | Description  | Required | Notes
 > crate::models::Firmware create_firmware(collection_id, body)
 Create firmware
 
+Firmware images must have unique version numbers and have an unique checksum. The checksum is calculated when the firmware image is uploaded.
+
 ### Parameters
 
 

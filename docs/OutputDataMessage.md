@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**_type** | Option<[**crate::models::OutputMessageType**](OutputMessageType.md)> |  | [optional]
+**r#type** | Option<[**crate::models::OutputMessageType**](OutputMessageType.md)> |  | [optional]
 **device** | Option<[**crate::models::Device**](Device.md)> |  | [optional]
 **payload** | Option<**String**> |  | [optional]
 **received** | Option<**String**> | Received time for message. Value is ms since epoch. | [optional]
