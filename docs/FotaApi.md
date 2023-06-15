@@ -10,6 +10,7 @@ Method | HTTP request | Description
 [**firmware_usage**](FotaApi.md#firmware_usage) | **GET** /span/collections/{collectionId}/firmware/{imageId}/usage | Firmware usage
 [**list_firmware**](FotaApi.md#list_firmware) | **GET** /span/collections/{collectionId}/firmware | List firmware
 [**retrieve_firmware**](FotaApi.md#retrieve_firmware) | **GET** /span/collections/{collectionId}/firmware/{imageId} | Retrieve firmware
+[**retrieve_firmware_stats**](FotaApi.md#retrieve_firmware_stats) | **GET** /span/collections/{collectionId}/firmware/{imageId}/stats | Retrieve firmware statistics
 [**update_firmware**](FotaApi.md#update_firmware) | **PATCH** /span/collections/{existingCollectionId}/firmware/{imageId} | Update firmware
 
 
@@ -176,6 +177,35 @@ Name | Type | Description  | Required | Notes
 ### Return type
 
 [**crate::models::Firmware**](Firmware.md)
+
+### Authorization
+
+[APIToken](../README.md#APIToken)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+
+## retrieve_firmware_stats
+
+> crate::models::FirmwareStats retrieve_firmware_stats(collection_id, image_id)
+Retrieve firmware statistics
+
+### Parameters
+
+
+Name | Type | Description  | Required | Notes
+------------- | ------------- | ------------- | ------------- | -------------
+**collection_id** | **String** |  | [required] |
+**image_id** | **String** |  | [required] |
+
+### Return type
+
+[**crate::models::FirmwareStats**](FirmwareStats.md)
 
 ### Authorization
 

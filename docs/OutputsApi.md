@@ -9,6 +9,7 @@ Method | HTTP request | Description
 [**list_outputs**](OutputsApi.md#list_outputs) | **GET** /span/collections/{collectionId}/outputs | List outputs
 [**logs**](OutputsApi.md#logs) | **GET** /span/collections/{collectionId}/outputs/{outputId}/logs | Output logs
 [**retrieve_output**](OutputsApi.md#retrieve_output) | **GET** /span/collections/{collectionId}/outputs/{outputId} | Retrieve output
+[**retrieve_output_stats**](OutputsApi.md#retrieve_output_stats) | **GET** /span/collections/{collectionId}/outputs/{outputId}/stats | Retrieve output statistics
 [**status**](OutputsApi.md#status) | **GET** /span/collections/{collectionId}/outputs/{outputId}/status | Output status
 [**update_output**](OutputsApi.md#update_output) | **PATCH** /span/collections/{existingCollectionId}/outputs/{outputId} | Update output
 
@@ -145,6 +146,35 @@ Name | Type | Description  | Required | Notes
 ### Return type
 
 [**crate::models::Output**](Output.md)
+
+### Authorization
+
+[APIToken](../README.md#APIToken)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+
+## retrieve_output_stats
+
+> crate::models::OutputStats retrieve_output_stats(collection_id, output_id)
+Retrieve output statistics
+
+### Parameters
+
+
+Name | Type | Description  | Required | Notes
+------------- | ------------- | ------------- | ------------- | -------------
+**collection_id** | **String** |  | [required] |
+**output_id** | **String** |  | [required] |
+
+### Return type
+
+[**crate::models::OutputStats**](OutputStats.md)
 
 ### Authorization
 

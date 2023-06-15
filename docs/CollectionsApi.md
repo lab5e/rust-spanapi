@@ -9,6 +9,7 @@ Method | HTTP request | Description
 [**list_collection_data**](CollectionsApi.md#list_collection_data) | **GET** /span/collections/{collectionId}/data | Retrieve data from devices
 [**list_collections**](CollectionsApi.md#list_collections) | **GET** /span/collections | List collections
 [**retrieve_collection**](CollectionsApi.md#retrieve_collection) | **GET** /span/collections/{collectionId} | Retrieve collection
+[**retrieve_collection_stats**](CollectionsApi.md#retrieve_collection_stats) | **GET** /span/collections/{collectionId}/stats | Retrieve collection statistics
 [**update_collection**](CollectionsApi.md#update_collection) | **PATCH** /span/collections/{collectionId} | Update collection
 
 
@@ -153,6 +154,36 @@ Name | Type | Description  | Required | Notes
 ### Return type
 
 [**crate::models::Collection**](Collection.md)
+
+### Authorization
+
+[APIToken](../README.md#APIToken)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+
+## retrieve_collection_stats
+
+> crate::models::CollectionStats retrieve_collection_stats(collection_id)
+Retrieve collection statistics
+
+Retrieve statistics for the collection. This is the aggregated metrics for devices, outputs, firmware images, blobs and gateways in the collection
+
+### Parameters
+
+
+Name | Type | Description  | Required | Notes
+------------- | ------------- | ------------- | ------------- | -------------
+**collection_id** | **String** | The collection ID of the collection you are requesting | [required] |
+
+### Return type
+
+[**crate::models::CollectionStats**](CollectionStats.md)
 
 ### Authorization
 

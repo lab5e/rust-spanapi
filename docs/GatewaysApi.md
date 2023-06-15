@@ -9,6 +9,7 @@ Method | HTTP request | Description
 [**gateway_certificates**](GatewaysApi.md#gateway_certificates) | **GET** /span/collections/{collectionId}/gateways/{gatewayId}/certs | Get issued certificate(s) for gateway
 [**list_gateways**](GatewaysApi.md#list_gateways) | **GET** /span/collections/{collectionId}/gateways | List gateways
 [**retrieve_gateway**](GatewaysApi.md#retrieve_gateway) | **GET** /span/collections/{collectionId}/gateways/{gatewayId} | Retrieve gateway
+[**retrieve_gateway_stats**](GatewaysApi.md#retrieve_gateway_stats) | **GET** /span/collections/{collectionId}/gateways/{gatewayId}/stats | Retrieve gateway statistics
 [**update_gateway**](GatewaysApi.md#update_gateway) | **PATCH** /span/collections/{existingCollectionId}/gateways/{gatewayId} | Update gateway
 
 
@@ -152,6 +153,37 @@ Name | Type | Description  | Required | Notes
 ### Return type
 
 [**crate::models::Gateway**](Gateway.md)
+
+### Authorization
+
+[APIToken](../README.md#APIToken)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+
+## retrieve_gateway_stats
+
+> crate::models::GatewayStats retrieve_gateway_stats(collection_id, gateway_id)
+Retrieve gateway statistics
+
+Get statistics for gateway
+
+### Parameters
+
+
+Name | Type | Description  | Required | Notes
+------------- | ------------- | ------------- | ------------- | -------------
+**collection_id** | **String** |  | [required] |
+**gateway_id** | **String** |  | [required] |
+
+### Return type
+
+[**crate::models::GatewayStats**](GatewayStats.md)
 
 ### Authorization
 

@@ -14,6 +14,7 @@ Method | HTTP request | Description
 [**list_downstream_messages**](DevicesApi.md#list_downstream_messages) | **GET** /span/collections/{collectionId}/devices/{deviceId}/outbox | List the messages in the outbox
 [**list_upstream_messages**](DevicesApi.md#list_upstream_messages) | **GET** /span/collections/{collectionId}/devices/{deviceId}/inbox | List incoming messages
 [**retrieve_device**](DevicesApi.md#retrieve_device) | **GET** /span/collections/{collectionId}/devices/{deviceId} | Retrieve device
+[**retrieve_device_stats**](DevicesApi.md#retrieve_device_stats) | **GET** /span/collections/{collectionId}/devices/{deviceId}/stats | Retrieve device statistics
 [**update_device**](DevicesApi.md#update_device) | **PATCH** /span/collections/{existingCollectionId}/devices/{deviceId} | Update device
 
 
@@ -313,11 +314,40 @@ Retrieve device
 Name | Type | Description  | Required | Notes
 ------------- | ------------- | ------------- | ------------- | -------------
 **collection_id** | **String** | This is the containing collection | [required] |
-**device_id** | **String** | The device ID is assigned by the backend. | [required] |
+**device_id** | **String** | The device identifier | [required] |
 
 ### Return type
 
 [**crate::models::Device**](Device.md)
+
+### Authorization
+
+[APIToken](../README.md#APIToken)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+
+## retrieve_device_stats
+
+> crate::models::DeviceStats retrieve_device_stats(collection_id, device_id)
+Retrieve device statistics
+
+### Parameters
+
+
+Name | Type | Description  | Required | Notes
+------------- | ------------- | ------------- | ------------- | -------------
+**collection_id** | **String** | This is the containing collection | [required] |
+**device_id** | **String** | The device identifier | [required] |
+
+### Return type
+
+[**crate::models::DeviceStats**](DeviceStats.md)
 
 ### Authorization
 
