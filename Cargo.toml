@@ -1,6 +1,6 @@
 [package]
 name = "spanapi"
-version = "4.6.0"
+version = "4.6.1"
 authors = ["dev@lab5e.com"]
 description = "API for device, collection, output and firmware management"
 # Override this license by providing a License Object in the OpenAPI.
