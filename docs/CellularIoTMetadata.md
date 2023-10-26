@@ -14,6 +14,8 @@ Name | Type | Description | Notes
 **network** | Option<**String**> |  | [optional]
 **country_code** | Option<**String**> |  | [optional]
 **last_update** | Option<**String**> |  | [optional]
+**last_imsi** | Option<**String**> |  | [optional]
+**last_imei** | Option<**String**> |  | [optional]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
