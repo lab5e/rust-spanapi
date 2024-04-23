@@ -1,3 +1,5 @@
+pub mod activity_event;
+pub use self::activity_event::ActivityEvent;
 pub mod add_downstream_message_request;
 pub use self::add_downstream_message_request::AddDownstreamMessageRequest;
 pub mod any;
