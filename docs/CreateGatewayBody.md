@@ -1,12 +1,12 @@
-# CreateOutputRequest
+# CreateGatewayBody
 
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**r#type** | Option<[**crate::models::OutputType**](OutputType.md)> |  | [optional]
-**config** | Option<[**crate::models::OutputConfig**](OutputConfig.md)> |  | [optional]
-**enabled** | Option<**bool**> |  | [optional]
+**name** | Option<**String**> |  | [optional]
+**r#type** | Option<[**crate::models::GatewayType**](GatewayType.md)> |  | [optional]
+**config** | Option<[**crate::models::GatewayConfig**](GatewayConfig.md)> |  | [optional]
 **tags** | Option<**::std::collections::HashMap<String, String>**> |  | [optional]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

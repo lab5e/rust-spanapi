@@ -27,7 +27,7 @@ Create a new gateway.
 Name | Type | Description  | Required | Notes
 ------------- | ------------- | ------------- | ------------- | -------------
 **collection_id** | **String** |  | [required] |
-**body** | [**CreateGatewayRequest**](CreateGatewayRequest.md) |  | [required] |
+**body** | [**CreateGatewayBody**](CreateGatewayBody.md) |  | [required] |
 
 ### Return type
 
@@ -211,7 +211,7 @@ Name | Type | Description  | Required | Notes
 ------------- | ------------- | ------------- | ------------- | -------------
 **existing_collection_id** | **String** |  | [required] |
 **gateway_id** | **String** |  | [required] |
-**body** | [**UpdateGatewayRequest**](UpdateGatewayRequest.md) |  | [required] |
+**body** | [**UpdateGatewayBody**](UpdateGatewayBody.md) |  | [required] |
 
 ### Return type
 

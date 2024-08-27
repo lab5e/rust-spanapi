@@ -210,7 +210,7 @@ Update a collection.
 Name | Type | Description  | Required | Notes
 ------------- | ------------- | ------------- | ------------- | -------------
 **collection_id** | **String** | The ID of the collection. This is assigned by the backend. | [required] |
-**body** | [**UpdateCollectionRequest**](UpdateCollectionRequest.md) |  | [required] |
+**body** | [**UpdateCollectionBody**](UpdateCollectionBody.md) |  | [required] |
 
 ### Return type
 

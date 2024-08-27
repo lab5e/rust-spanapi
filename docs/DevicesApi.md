@@ -33,7 +33,7 @@ Name | Type | Description  | Required | Notes
 ------------- | ------------- | ------------- | ------------- | -------------
 **collection_id** | **String** |  | [required] |
 **device_id** | **String** |  | [required] |
-**body** | [**AddDownstreamMessageRequest**](AddDownstreamMessageRequest.md) |  | [required] |
+**body** | [**AddDownstreamMessageBody**](AddDownstreamMessageBody.md) |  | [required] |
 
 ### Return type
 
@@ -62,7 +62,7 @@ Create device
 Name | Type | Description  | Required | Notes
 ------------- | ------------- | ------------- | ------------- | -------------
 **collection_id** | **String** | This is the containing collection | [required] |
-**body** | [**CreateDeviceRequest**](CreateDeviceRequest.md) |  | [required] |
+**body** | [**CreateDeviceBody**](CreateDeviceBody.md) |  | [required] |
 
 ### Return type
 
@@ -375,7 +375,7 @@ Name | Type | Description  | Required | Notes
 ------------- | ------------- | ------------- | ------------- | -------------
 **existing_collection_id** | **String** |  | [required] |
 **device_id** | **String** |  | [required] |
-**body** | [**UpdateDeviceRequest**](UpdateDeviceRequest.md) |  | [required] |
+**body** | [**UpdateDeviceBody**](UpdateDeviceBody.md) |  | [required] |
 
 ### Return type
 

@@ -14,6 +14,7 @@ Name | Type | Description | Notes
 **last_transport** | Option<[**crate::models::MessageTransport**](MessageTransport.md)> |  | [optional]
 **last_received** | Option<**String**> |  | [optional]
 **last_payload** | Option<**String**> |  | [optional]
+**enabled** | Option<**bool**> |  | [optional]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

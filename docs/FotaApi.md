@@ -57,7 +57,7 @@ Firmware images must have unique version numbers and have an unique checksum. Th
 Name | Type | Description  | Required | Notes
 ------------- | ------------- | ------------- | ------------- | -------------
 **collection_id** | **String** |  | [required] |
-**body** | [**CreateFirmwareRequest**](CreateFirmwareRequest.md) |  | [required] |
+**body** | [**CreateFirmwareBody**](CreateFirmwareBody.md) |  | [required] |
 
 ### Return type
 
@@ -233,7 +233,7 @@ Name | Type | Description  | Required | Notes
 ------------- | ------------- | ------------- | ------------- | -------------
 **existing_collection_id** | **String** |  | [required] |
 **image_id** | **String** |  | [required] |
-**body** | [**UpdateFirmwareRequest**](UpdateFirmwareRequest.md) |  | [required] |
+**body** | [**UpdateFirmwareBody**](UpdateFirmwareBody.md) |  | [required] |
 
 ### Return type
 

@@ -24,7 +24,7 @@ Create a new device or gateway (client) certificate for an internet-connected de
 Name | Type | Description  | Required | Notes
 ------------- | ------------- | ------------- | ------------- | -------------
 **collection_id** | **String** |  | [required] |
-**body** | [**CreateCertificateRequest**](CreateCertificateRequest.md) |  | [required] |
+**body** | [**CreateCertificateBody**](CreateCertificateBody.md) |  | [required] |
 
 ### Return type
 
@@ -87,7 +87,7 @@ Sign a device or gateway (aka client) certificate. The certificate is a X509 Cer
 Name | Type | Description  | Required | Notes
 ------------- | ------------- | ------------- | ------------- | -------------
 **collection_id** | **String** |  | [required] |
-**body** | [**SignCertificateRequest**](SignCertificateRequest.md) |  | [required] |
+**body** | [**SignCertificateBody**](SignCertificateBody.md) |  | [required] |
 
 ### Return type
 
@@ -118,7 +118,7 @@ Verify client certificate. If a client certificate fails it can be tricky to pin
 Name | Type | Description  | Required | Notes
 ------------- | ------------- | ------------- | ------------- | -------------
 **collection_id** | **String** |  | [required] |
-**body** | [**VerifyCertificateRequest**](VerifyCertificateRequest.md) |  | [required] |
+**body** | [**VerifyCertificateBody**](VerifyCertificateBody.md) |  | [required] |
 
 ### Return type
 

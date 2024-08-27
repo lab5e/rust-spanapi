@@ -26,7 +26,7 @@ Create output
 Name | Type | Description  | Required | Notes
 ------------- | ------------- | ------------- | ------------- | -------------
 **collection_id** | **String** |  | [required] |
-**body** | [**CreateOutputRequest**](CreateOutputRequest.md) |  | [required] |
+**body** | [**CreateOutputBody**](CreateOutputBody.md) |  | [required] |
 
 ### Return type
 
@@ -229,7 +229,7 @@ Name | Type | Description  | Required | Notes
 ------------- | ------------- | ------------- | ------------- | -------------
 **existing_collection_id** | **String** |  | [required] |
 **output_id** | **String** |  | [required] |
-**body** | [**UpdateOutputRequest**](UpdateOutputRequest.md) |  | [required] |
+**body** | [**UpdateOutputBody**](UpdateOutputBody.md) |  | [required] |
 
 ### Return type
 
